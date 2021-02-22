@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap');
+
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0; 
+}
+
+body {
+    font-family: 'Open Sans';
+    line-height: 1.5;
+}
+
+.title-text {
+   font-size: 30px;
+   text-align: center;
+}
+
+.header {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
+    url('/images/item6.jpeg') center/cover no-repeat fixed;
+    margin-top: auto;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+.hero .title {
+    color: white;
+    font-size: 50px;
+
+}
+
+.hero-button {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 13px 20px;
+    border-radius: 200px;
+    font-weight: 900;
+    background: #e40017;
+    color: #fff;
+    cursor: pointer;
+    border: 2px solid #e40017;
+    margin-top: 10px;
+}
+
+.hero-button:hover {
+    background: #fff;
+    color: #e40017;
+    border: none;
+}
+
+.pulsate {
+    animation: pulsate 3s ease-in-out;
+    animation-iteration-count: infinite;
+    opacity: .3;
+    color: #000;
+}
+
+@keyframes pulsate {
+    0% {
+        opacity: .3;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: .3;
+    }
+}
+
+#about {
+    padding: 40px;
+}
+
+.about {
+    margin: 30px;
+    display: flex;
+}
+
+.about-icon .fas {
+    font-size: 60px;
+    color: #822659;
+    margin-right: 20px;
+}
+
+.about-subtitle {
+    text-transform: capitalize;
+    color: #822659;
+    font-size: 25px;
+}
+
+.about-info {
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+.about-icon:hover .fas,
+.about-subtitle:hover {
+    transition: transform 1s ease, color 1s ease;
+    transform: translateY(-10px);
+    color: #e36bae;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 576px) {
+    .about-center {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .about {
+        flex: 0 0 calc(50% - 16px);
+    }
+}
+
+@media screen and (min-width: 972px) {
+    .about {
+       flex: 0 0 calc(33.3% - 16px);
+    }
+}
+
+.menu-image {
+    min-height: 80vh;
+    background: url('/images/4.jpeg')center/cover fixed no-repeat;
+}
+
+.menu-text {
+    min-height: 80vh;
+    align-items: center;
+    background: #ff577f;
+    columns: #000;
+    padding: 40px 0;
+}
+
+.menu-text-center {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.menu-text h1 {
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.menu-text p {
+    margin: 20px 0;
+    line-height: 2;
+}
+
+.menu-text a {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 13px 20px;
+    border-radius: 200px;
+    font-weight: 900;
+    background: rgba(10, 10, 10);
+    color: #ff577f;
+    cursor: pointer;
+    border: 2px solid #000;
+}
+
+.menu-text a:hover {
+    color: #ff577f;
+    background: #fff;
+    border: none;
+}
+
+@media screen and (min-width: 776px) {
+    .menu {
+        display: flex;
+    }
+    .menu-text {
+        flex: 0 0 30%;
+    }
+    .menu-image {
+        flex: 0 0 70%;
+        clip-path: polygon(0 0 , 100% 0, 50% 100%, 0 100%);
+    }
+    .menu {
+        background: #ff577f;
+    }
+}
+
+#social-icons {
+    height: 150px;
+    background: #fff;
+    text-align: center;
+    padding: 50px 0 50px 0;
+}
+
+#social-icons a{
+   display: inline-block;
+   padding: 5px 10px;
+   margin: 0 5px;
+   font-size: 30px;
+   border-radius: 5px;
+   transition: transform 2s ease-in-out, color 1s ease-in-out;
+}
+
+#social-icons a:hover {
+    transform: translateY(-20px);
+}
+
+.facebook {
+    color: rgb(38, 38, 158);
+}
+
+.twitter {
+    color: rgb(7, 79, 212);
+}
+
+.instagram {
+    color: #ff577f;
+}
+
+.number {
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0 ,0 ,0 , 0.4)),
+    url('/images/2.jpeg')center/cover no-repeat fixed;
+    padding: 60px 0;
+    color: #fff;
+}
+
+.number p {
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.number:hover {
+    color: #fb743e;
+}
+
+.number .fas {
+    font-size: 60px;
+    margin: 20px 0;
+}
+
+.number h3 {
+    text-transform: uppercase;
+}
+
+@media screen and (min-width: 576px) {
+    #numbers {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #numbers {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
